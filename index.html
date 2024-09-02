@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Title -->
     <title>Home - Sevadeep </title>
+    <link rel="stylesheet" href="./assets/css/silverBox.min.css">
     <script src="assets/js/jquery.min.js"></script>
     <!-- owl carousel js -->
     <script src="assets/js/owl.carousel.min.js"></script>
@@ -1045,7 +1046,32 @@
         <i class="fas fa-chevron-up"></i>
     </div>
     <!--  jquery -->
+	<script src="assets/js/silverbox.min.js"></script>
+    <script>
+        (function () {
+            // Set a delay of 3 seconds before triggering the modal
+            setTimeout(function () {
+                new silverBox({
+                    alertIcon: "info",
+                    theme: "light",
+                    customIcon: "assets/img/sevadeep.png",
+                    closeOnOverlayClick: true,
+                    title: {
+                        text: "We Are Working On A New Look For Sevadeep",
+                    },
+                    centerContent: true,
+                    text: "In The Mean Time Here Is The Basic Version",
+                    showCloseButton: true,
+                    confirmButton: {
+                        text: "Close",
+                        closeOnClick: true,
+                    },
 
+                });
+            }, 1000);
+
+        })();
+</script>
     <!-- Bootstrap js -->
     <script src="assets/js/bootstrap.bundle.js"></script>
     <!-- Meanu js -->
